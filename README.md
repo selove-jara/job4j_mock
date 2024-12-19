@@ -197,7 +197,7 @@ Smoke-тесты:
 
 Для получения развернутой информации о REST API сервисов вы можете воспользоваться Swagger,
 соответственно перед этим запустив локальные сервисы
-
+вы
 - Auth сервис - http://localhost:9900/swagger-ui/index.html
 - Desc сервис - http://localhost:9902/swagger-ui/index.html
 - Mock сервис - http://localhost:9912/swagger-ui/index.html
