@@ -94,7 +94,7 @@ class BindActionTest {
     }
 
     @Test
-    void callback_ShouldReturnSuccessMessage_WhenSuccessObjectExists() {
+    void whenCallbackThenReturnSuccessMessageWhenSuccessObjectExists() {
         when(message.getChatId()).thenReturn(123456789L);
         when(message.getText()).thenReturn("ivanov@mail.com password");
         when(profileTGService.findByChatId("123456789")).thenReturn(Optional.empty());
