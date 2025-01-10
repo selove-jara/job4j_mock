@@ -18,10 +18,13 @@ import java.util.Optional;
  */
 
 @Service
-@AllArgsConstructor
 @Slf4j
 public class ProfileService {
     private final PersonRepository personRepository;
+
+    public ProfileService(PersonRepository personRepository) {
+        this.personRepository = personRepository;
+    }
 
     /**
      * Получить ProfileDTO по ID

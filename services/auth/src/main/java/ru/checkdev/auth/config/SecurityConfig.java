@@ -27,6 +27,8 @@ public class SecurityConfig {
         return (web) -> web.ignoring().antMatchers(
                 "/ping",
                 "/registration",
+                "/bind",
+                "/unbind",
                 "/forgot",
                 "/auth/activated/**",
                 "/person/by",

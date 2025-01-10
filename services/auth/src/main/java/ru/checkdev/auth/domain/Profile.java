@@ -44,6 +44,17 @@ public class Profile {
 
     private String about;
 
+    public String getChatId() {
+        return chatId;
+    }
+
+    public void setChatId(String chatId) {
+        this.chatId = chatId;
+    }
+
+    @Column(name = "chat_id")
+    private String chatId;
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(referencedColumnName = "id", name = "id_photo")
     private Photo photo;
